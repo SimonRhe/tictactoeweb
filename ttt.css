@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+} 
+
+#pageframework {
+    height: 100vh;
+    display: grid;
+    grid-template: 100px minmax(300px, auto) 30px / 100%;
+    background-color: #5d5c61; /* #557a95; */
+    font-family: 'Gloria Hallelujah', cursive;
+    font-size: 1.5em;
+}
+
+nav {
+    background-color: #7395ae; /* #557a95; #5d5c61; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav h1 {
+    /* font-family: cursive; */
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+
+nav a {
+    /*text-transform: uppercase; */
+    text-decoration: none;
+    /*font-weight: bold;*/
+    color: #5d5c61;
+  }
+  
+  nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border-style: solid;
+    background-color: yellow; */
+  }
+  
+  nav li {
+    list-style: none;
+    margin: 14px;
+    padding: 1px;
+    border-bottom-width: 2px;
+    border-bottom-color: rgba(0, 0, 0, 0);  
+    border-bottom-style: solid;
+  }
+  
+  nav li:hover {
+    animation-name: linkanim;
+    animation-duration: 0.75s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes linkanim  {
+    100% {   border-bottom-color: #5d5c61;  }
+  }
+
+#board {
+    background-color: black;
+    justify-self: center; /* within pagegrid */
+    align-self: center;   /* within pagegrid */
+    display: grid;
+    grid-template: repeat(3, 100px) / repeat(3, 100px);
+    grid-gap: 5px;
+    padding: 5px;
+    
+
+}
+
+.square {
+    background-color: white;
+    border: 3px solid grey;
+    font-family: sans-serif;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.unplayed {
+
+
+}
+
+.unplayed:hover {
+  background-color: #557a95;
+}
+
+
+
+footer {
+    font-size: 0.75em;
+    padding-left: 20px; 
+    background-color: #b1a296;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+footer a {
+  display: inline;
+}
